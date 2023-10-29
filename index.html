@@ -156,33 +156,25 @@ print(fibonacci(10))
                 <option value="Anders">Anders</option>
             </select>
             <p>Zou je meer van dit soort artikelen willen zien?</p>
-            <form>
-                <div>
-                    <input type="radio" value="ja" checked/>
-                    <label for="ja">Ja</label>
 
-                    <input type="radio" value="nee"/>
-                    <label for="nee">Nee</label>
+            <input type="radio" name="selectie" value="ja" checked/>
+            <label for="ja">Ja</label>
 
-                    <input type="radio" value="misschien"/>
-                    <label for="misschien">Misschien</label>
-                </div>
-                <br>
-                <div>
-                    <label for="review">Opmerkingen</label>
-                </div>
-                <div>
-                    <textarea id="review" name="review" rows="5" cols="33">Wat vond je van dit artikel?</textarea>
-                </div>
-                <div>
-                    <input type="checkbox" id="abonneer" name="abonneer" value="nieuwsbrief" checked/>
-                    <label for="nieuwsbrief">Schrijf me in voor de nieuwsbrief</label>
-                </div>
-                <br>
-                <div>
-                    <button type="submit">versturen</button>
-                </div>
-            </form>
+            <input type="radio" name="selectie" value="nee"/>
+            <label for="nee">Nee</label>
+
+            <input type="radio" name="selectie" value="misschien"/>
+            <label for="misschien">Misschien</label>
+
+            <label for="review">Opmerkingen</label>
+            <br>
+            <textarea id="review" name="review" rows="5" cols="33">Wat vond je van dit artikel?</textarea>
+
+            <input type="checkbox" id="abonneer" name="abonneer" value="nieuwsbrief" checked/>
+            <label for="abonneer">Schrijf me in voor de nieuwsbrief</label>
+
+            <button type="submit">versturen</button>
+
         </fieldset>
     </form>
 </footer>
