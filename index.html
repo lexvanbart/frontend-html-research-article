@@ -121,7 +121,7 @@ print(fibonacci(10))
         <figcaption><strong>Figuur 3:</strong> scheikundige representatie serotonine</figcaption>
     </figure>
     <h3>Academische vaardigheden</h3>
-    <p>Naast de directe educatieve voordelen, heeft het leren programmeren ook een positief effect op academische vaardigheden, zoals leesvaardigheid, schrijfvaardigheid en probleemoplossend vermogen. Het coderen vergroot de cognitieve flexibiliteit en de capaciteit om complexe informatie te verwerken. Het biedt studenten ook de mogelijkheid om vertrouwd te raken met technologische tools en concepten die essentieel zijn in de moderne wereld. Ze leren bijvoorbeeld over databases, netwerken, gebruikersinterfaces en web technologieën, zoals <abbr>HTML</abbr> (HyperText Markup Language) en <abbr>CSS</abbr> (Cascading Style Sheets). Deze technologische kennis kan hen helpen bij het uitvoeren van onderzoek, het creëren van multimedia-inhoud en het presenteren van informatie op digitale platforms, zoals wordt gedaan op het wereldwijd bekende <a href="https://edhub.novi.nl/">EdHub</a> gebouwd door NOVI Hogeschool (zie Figuur 4). Het schijnt dus vrij lastig te zijn zulke leuke programmeervideo's te maken als je zelf nooit hebt geleerd hoe je moet programmeren. Schokkend!</p>
+    <p>Naast de directe educatieve voordelen, heeft het leren programmeren ook een positief effect op academische vaardigheden, zoals leesvaardigheid, schrijfvaardigheid en probleemoplossend vermogen. Het coderen vergroot de cognitieve flexibiliteit en de capaciteit om complexe informatie te verwerken. Het biedt studenten ook de mogelijkheid om vertrouwd te raken met technologische tools en concepten die essentieel zijn in de moderne wereld. Ze leren bijvoorbeeld over databases, netwerken, gebruikersinterfaces en web technologieën, zoals <abbr>HTML</abbr> (HyperText Markup Language) en <abbr>CSS</abbr> (Cascading Style Sheets). Deze technologische kennis kan hen helpen bij het uitvoeren van onderzoek, het creëren van multimedia-inhoud en het presenteren van informatie op digitale platforms, zoals wordt gedaan op het wereldwijd bekende <a href="https://edhub.novi.nl/" target="_blank">EdHub</a> gebouwd door NOVI Hogeschool (zie Figuur 4). Het schijnt dus vrij lastig te zijn zulke leuke programmeervideo's te maken als je zelf nooit hebt geleerd hoe je moet programmeren. Schokkend!</p>
     <video controls poster="assets/placeholder_video.png">
         <source src="assets/multimedia_preview_edhub.mov">
     </video>
@@ -133,16 +133,52 @@ print(fibonacci(10))
 </body>
 <footer>
     <h4>Bedankt voor het lezen van dit artikel. Laat ons weten wat je ervan vond!</h4>
-    <form action="" method="get" class="review">
-        <div class="review">
-            <label for="naam">Naam:</label>
-            <input type="text" name="naam" id="naam" required/>
-        </div>
-        <br>
-        <div class="review">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required/>
-        </div>
+    <form>
+        <fieldset>
+            <legend>Gegevens</legend>
+            <div class="form">
+                <label for="naam">Naam:</label>
+                <input type="text" name="naam" id="naam" required/>
+            </div>
+            <br>
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Jouw review</legend>
+            <label>Hoe heb je dit artikel gevonden?</label>
+            <select id="">
+                <option value="Google">Google</option>
+                <option value="Vriend">Vriend</option>
+                <option value="Advertentie">Advertentie</option>
+                <option value="Anders">Anders</option>
+            </select>
+            <p>Zou je meer van dit soort artikelen willen zien?</p>
+            <form>
+                <div>
+                    <input type="radio" value="ja" checked/>
+                    <label for="ja">Ja</label>
+
+                    <input type="radio" value="nee"/>
+                    <label for="nee">Nee</label>
+
+                    <input type="radio" value="misschien"/>
+                    <label for="misschien">Misschien</label>
+                </div>
+                <div>
+                    <label for="review">Opmerkingen</label>
+
+                    <textarea id="review" name="review" rows="5" cols="33">Wat vond je van dit artikel?</textarea>
+                    <input type="checkbox" id="abonneer" name="abonneer" value="nieuwsbrief" checked/>
+                    <label for="nieuwsbrief">Schrijf me in voor de nieuwsbrief</label>
+                </div>
+                <div>
+                    <button type="submit">versturen</button>
+                </div>
+            </form>
+        </fieldset>
     </form>
 </footer>
 </html>
